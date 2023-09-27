@@ -1,0 +1,12 @@
+<div>
+<mat-grid-list cols="3" rowHeight="600px">
+  <mat-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows">
+      <div>
+      <img src="{{tile.image}}" >
+      </div>
+  </mat-grid-tile>
+</mat-grid-list>
+</div>

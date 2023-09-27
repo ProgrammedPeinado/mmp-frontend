@@ -1,0 +1,43 @@
+.home-container
+{
+  display: block;
+  height: 1000px;
+  align-items: center;
+  justify-content: center;
+}
+
+.body, div
+{
+  background: black;
+}
+
+.mat-toolbar-row
+{
+  background: grey;
+  align-items: right;
+  text-align: right;
+  color: white;
+}
+
+.mat-drawer-container
+{
+  height: 100%;
+  border: dimgray;
+}
+
+.mat-grid-tile
+{
+  width: 100%;
+  height: 100%;
+}
+
+.button, .math-icon
+{
+  width: 2px;
+  height: 2px;
+}
+
+.spacer
+{
+  flex: 1 1 auto;
+}

@@ -1,0 +1,20 @@
+.spacer
+{
+  flex: 1 1 auto;
+}
+
+.center
+{
+  display: flex;
+  background-color: #ff1124;
+  justify-content: center;
+  height: 100vh;
+}
+
+.mat-card
+{
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  font-size: 20px;
+}

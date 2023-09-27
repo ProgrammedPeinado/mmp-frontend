@@ -1,0 +1,27 @@
+.update-form
+{
+  max-width: 200px;
+  padding: 15px;
+  margin: 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.mat-form-field
+{
+  padding: 10px;
+}
+
+.mat-card
+{
+  align-items: left;
+  text-align: left;
+  justify-content: left;
+}
+
+.div
+{
+  align-items: left;
+  text-align: left;
+  justify-content: left;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}

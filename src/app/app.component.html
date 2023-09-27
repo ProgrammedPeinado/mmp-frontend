@@ -1,0 +1,53 @@
+<mat-toolbar>
+  <h1 routerLink="/">MyMoviePlan</h1>
+  <span class="spacer"></span>
+  <div *ngIf="loggedA == false || loggedA == null">
+  Admin Login
+  <button mat-icon-button class="login-icon">
+    <mat-icon routerLink="/adminlogin">loging</mat-icon>
+  </button>
+ </div>
+ <div *ngIf="!loggedA == false">
+  Admin Profile
+  <button class="mat-focus-indicator" style="width: 40px; height: 40px;">
+    <mat-icon routerLink="/admin">admin_panel_settings</mat-icon>
+  </button>
+  |
+  Logout
+  <button mat-icon-button class="logout-icon">
+    <mat-icon routerLink="/logout">logout</mat-icon>
+  </button>
+ </div>
+</mat-toolbar>
+<mat-toolbar-row>
+  <div *ngIf="loggedU == false || loggedU == null">
+  Make sure to register and sign in, to start booking your favorite movie shows!
+  </div>
+  <span class="spacer"></span>
+  <div *ngIf="loggedU == false || loggedU == null">
+  Options
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/register">
+        Register<mat-icon>assignment</mat-icon>
+      </button>
+      <button mat-menu-item routerLink="/userlogin">
+        Log in<span></span><mat-icon>login</mat-icon>
+      </button>
+    </mat-menu>
+  </div>
+  <div *ngIf="!loggedU == false">
+    User Profile
+    <button class="mat-focus-indicator" style="width: 40px; height: 40px;">
+      <mat-icon routerLink="/user">perm_identity</mat-icon>
+    </button>
+    |
+    Logout
+    <button mat-icon-button class="logout-icon">
+      <mat-icon routerLink="/logout">logout</mat-icon>
+    </button>
+  </div>
+</mat-toolbar-row>
+<router-outlet></router-outlet>
